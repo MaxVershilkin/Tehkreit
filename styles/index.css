@@ -138,8 +138,10 @@ body {
     list-style-type: none;
 }
 
-.main-header__link {
-    display: block;
+.main-header__link, .main-header__button {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
 .side {

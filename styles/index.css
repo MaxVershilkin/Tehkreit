@@ -144,6 +144,19 @@ body {
     flex: 1;
 }
 
+
+/* Contacts */
+
+.contacts {
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5rem 2.5rem 5rem;
+
+    background-color: #F5F5F5;
+}
+
 /* Footer */
 
 .footer {
@@ -173,6 +186,8 @@ body {
 .footer__link:hover {
     text-decoration: underline;
 }
+
+/* Side panel */
 
 .side {
     position: fixed;

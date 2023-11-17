@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'TT Autonomous';
+    src: url('/fonts/autonomous/font-tt-autonomous-regular.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-autonomous-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Autonomous';
+    src: url('/fonts/autonomous/font-tt-autonomous-medium.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-autonomous-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Autonomous';
+    src: url('/fonts/autonomous/font-tt-autonomous-bold.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-autonomous-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Autonomous';
+    src: url('/fonts/autonomous/font-tt-autonomous-demi-bold.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-autonomous-demi-bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Smalls';
+    src: url('/fonts/autonomous/font-tt-smalls-regular.woff') format('woff2'),
+        url('/fonts/autonomous/font-tt-smalls-regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Smalls';
+    src: url('/fonts/autonomous/font-tt-smalls-medium.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-smalls-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Smalls';
+    src: url('/fonts/autonomous/font-tt-smalls-italic.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-smalls-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Smalls';
+    src: url('/fonts/autonomous/font-tt-smalls-demi-bold.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-smalls-demi-bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Smalls';
+    src: url('/fonts/autonomous/font-tt-smalls-bold.woff2') format('woff2'),
+        url('/fonts/autonomous/font-tt-smalls-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'TT Smalls', Arial, sans-serif;
+}

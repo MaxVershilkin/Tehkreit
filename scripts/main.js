@@ -1,0 +1,1 @@
+console.log(`That's my script!`);

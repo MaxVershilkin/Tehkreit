@@ -46,18 +46,18 @@
             <h1 class="homepage__title main-title">
               Оптимизируйте свои затраты на энергопотребление
             </h1>
-            <p class="homepage__description">
+            <p class="homepage__subtitle main-subtitle">
               Когенерационные газопоршневые электростанции "под ключ" - от проекта до запуска. Надежно и эффективно.
             </p>
 
             <ul class="homepage__buttons">
               <li>
-                <button class="homepage__button button-stroked">
+                <button class="homepage__button button button-stroked">
                   Расчёт стоимости
                 </button>
               </li>
               <li>
-                <button class="homepage__button button-dark">
+                <button class="homepage__button button button-dark">
                   Получить консультацию
                 </button>
               </li>
@@ -74,30 +74,36 @@
 
                 </div>
 
-                <ul class="homepage__slider-dots">
+                <ul class="homepage__dots list">
                   <li>
-                    <button class="homepage__slider-dot homepage__slider-dot--active">
+                    <button class="homepage__dot homepage__dot--active button-clean">
                       Первый слайд
                     </button>
                   </li>
                   <li>
-                    <button class="homepage__slider-dot">
+                    <button class="homepage__dot button-clean">
                       Второй слайд
                     </button>
                   </li>
                 </ul>
 
+                <div class="homepage__progress"></div>
+
               </div>
 
-              <ul class="homepage__slider-arrows">
+              <ul class="homepage__arrows list">
                 <li>
-                  <button class="homepage__slider-arrow disabled">
-                    Предыдущий
+                  <button class="homepage__arrow homepage__arrow--disabled button-clean">
+                    <svg class="homepage__arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.75 1L1.75 8L7.75 15" stroke-width="2" stroke-linecap="round"/>
+                    </svg>Предыдущий
                   </button>
                 </li>
                 <li>
-                  <button class="homepage__slider-arrow">
-                    Следующий
+                  <button class="homepage__arrow button-clean">
+                    <svg class="homepage__arrow-icon homepage__arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.25 15L7.25 8L1.25 1" stroke-width="2" stroke-linecap="round"/>
+                    </svg>Следующий
                   </button>
                 </li>
               </ul>
@@ -110,6 +116,10 @@
             <svg class="homepage__logo" width="502" height="500" viewBox="0 0 502 500" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M229.713 156.224L338.803 265.314C350.686 277.938 358.018 294.89 358.186 313.555L358.202 500H215.359V178.706C215.359 158.718 199.5 142.914 179.519 142.914H0V0.039827L45.7226 0.0876498C64.0451 1.05996 82.1126 8.5117 94.2108 20.7453L216.387 142.914L338.389 20.9047C350.487 8.6711 367.789 0.980283 386.112 0L501.028 0.0796844V142.914H237.165C229.761 142.914 224.246 149.975 229.713 156.224Z" fill="white"/>
             </svg>
+          </div>
+
+          <div class="homepage__grid">
+            <div class="homepage__grid-line"></div>
           </div>
 
         </section>
@@ -460,7 +470,7 @@
 
                   <picture>
                     <source srcset="/images/img-project-1-image-1.jpeg" media="(max-width:360px)">
-                    <img src="/images/img-project-1-image-1.jpeg" alt="Дизельный генератор данного проекта">
+                    <img src="/images/img-project-1-image-1.jpg" alt="Дизельный генератор данного проекта">
                   </picture>
 
                 </div>
@@ -1256,5 +1266,6 @@
     </div>
 
   </body>
+  <script src="scripts/main.js"></script>
 
 </html>

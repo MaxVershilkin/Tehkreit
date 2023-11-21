@@ -100,7 +100,7 @@ body {
     margin: 0 5rem 0 0;
     padding: 0;
 
-    color: var(--color-primary);
+    color: var(--color-optional-1);
 
     background-color: var(--color-optional-3);
 }
@@ -153,14 +153,14 @@ body {
     background-color: var(--color-accent);
 }
 
-.button-stroked {
+.button--stroked {
     color: #fff;
 
     border: solid 1px #fff;
     background-color: transparent;
 }
 
-.button-stroked:hover, .button-stroked:focus {
+.button--stroked:hover, .button-stroked:focus {
     color: var(--color-primary);
     
     cursor: pointer;
@@ -172,14 +172,14 @@ body {
     background-color: var(--color-accent);
 }
 
-.button-dark {
+.button--dark {
     color:var(--color-accent);
 
     border: solid 1px var(--color-accent);
     background-color: var(--color-primary);
 }
 
-.button-dark:hover, .button-dark:focus {
+.button--dark:hover, .button-dark:focus {
     color: var(--color-primary);
     
     cursor: pointer;
@@ -187,7 +187,22 @@ body {
     box-shadow: 0 0 1.5rem var(--color-accent);
 }
 
-.button-clean {
+.button--dark-stroked {
+    color:var(--color-primary);
+
+    border: solid 1px var(--color-primary);
+    background-color: transparent;
+}
+
+.button--dark-stroked:hover, .button-dark-stroked:focus {
+    color: var(--color-primary);
+    
+    cursor: pointer;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 1.5rem var(--color-accent);
+}
+
+.button--clean {
     font-size: 0;
 
     border: none;
@@ -558,7 +573,7 @@ body {
 }
 
 .conditions__item {
-    padding: 2.5rem 5rem;
+    padding: 2.5rem 2.5rem 2.5rem 5rem;
     box-sizing: border-box;
 }
 
@@ -593,11 +608,11 @@ body {
 .services__item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: stretch;
+    align-items: stretch;
 
     width: 33.33%;
     min-height: 366px;
-    padding: var(--2, 20px) var(--4, 40px) var(--4, 40px) var(--8, 80px);
     box-sizing: border-box;
 }
 
@@ -614,19 +629,128 @@ body {
 }
 
 .services__button {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: 100%;
+    padding: 1.25rem 2.5rem 5rem;
+
+    color: var(--color-optional-1);
+    font-size: inherit;
+
+    transition: background-color .4s ease-out;
 }
+
+.services__button--accent {
+    color: var(--color-light);
+    background-color: var(--color-optional-1);
+}
+
+.services__button--accent .services__icon {
+    fill: var(--color-light);
+}
+
+.services__button:hover,
+.services__button:focus {
+    background-color: var(--color-light);
+}
+
+.services__button--accent:hover,
+.services__button--accent:focus {
+    color: var(--color-light);
+    background-color: var(--color-optional-1);
+}
+
+.services__hint {
+    color: var(--color-optional-1);
+    font-family: var(--font-optional);
+}
+
+.services__graphics {
+    margin-bottom: 5rem;
+}
+
+.services__name {
+    color: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+
 
 /* Contacts */
 
 .contacts {
+    position: relative;
 
-    display: flex;
-    flex-direction: column;
+    padding: 5rem 2.5rem 5rem 5rem;
 
-    padding: 5rem 2.5rem 5rem;
+    line-height: 140%;
 
     background-color: #F5F5F5;
+}
+
+.contacts__title-wrap {
+    position: relative;
+
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 2;
+    
+    border: 0;
+}
+
+.contacts__title {
+    z-index: 2;
+}
+
+.contacts__subtitle {
+    margin-bottom: 2.5rem;
+    z-index: 2;
+
+    line-height: 140%;
+}
+
+.contacts__button {
+    position: relative;
+    z-index: 2;
+}
+
+.contacts__paragraph {
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.contacts__information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem 0;
+
+    z-index: 2;
+
+    font-size: 1.5rem;
+    line-height: 140%;
+}
+
+.contacts__bg-logo-light {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    /* z-index: 1; */
+}
+
+.contacts__bg-logo-accent {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    /* z-index: 1; */
 }
 
 /* Footer */

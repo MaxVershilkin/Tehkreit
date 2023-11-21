@@ -90,6 +90,8 @@
     --color-optional-2: #E6E6E6;
     --color-optional-3: #F5F5F5;
 
+    --gradient-1: linear-gradient(90deg, #575757 -11%, #8C8C8C 100%);
+
     --spacing-x2: calc(1rem * 2); 
     font-size: 16px;
     font-family: var(--font-main);
@@ -186,7 +188,7 @@ body {
     background-color: var(--color-primary);
 }
 
-.button--dark:hover, .button-dark:focus {
+.button--dark:hover, .button--dark:focus {
     color: var(--color-primary);
     
     cursor: pointer;
@@ -201,7 +203,7 @@ body {
     background-color: transparent;
 }
 
-.button--dark-stroked:hover, .button-dark-stroked:focus {
+.button--dark-stroked:hover, .button--dark-stroked:focus {
     color: var(--color-primary);
     
     cursor: pointer;
@@ -693,6 +695,16 @@ body {
     text-align: left;
 }
 
+/* Customers */
+
+.customers__content {
+    display: flex;
+}
+
+.customers__subtitle {
+    background: var(--gradient-1);
+}
+
 /* About */
 
 .about {
@@ -716,10 +728,6 @@ body {
 
 .about__paragraph {
     margin-bottom: 1.25rem;
-}
-
-.about__paragraph:last-of-type {
-    margin-bottom: 0;
 }
 
 .about__conditions {
@@ -747,6 +755,10 @@ body {
     padding-left: 2rem;
 
     list-style-type: decimal;
+}
+
+.about__benefits > .about__paragraph {
+    margin-bottom: 0;
 }
 
 /* Faq */

@@ -102,7 +102,7 @@ body {
     margin: 0 5rem 0 0;
     padding: 0;
 
-    color: var(--color-optional-1);
+    color: var(--color-primary);
 
     background-color: var(--color-optional-3);
 }
@@ -228,6 +228,7 @@ body {
 
 .superscript {
     font-size: 2rem;
+    line-height: 140%;
 }
 
 .section-title {
@@ -670,6 +671,7 @@ body {
 
 .services__button:hover,
 .services__button:focus {
+    cursor: pointer;
     background-color: var(--color-light);
 }
 
@@ -691,7 +693,8 @@ body {
 .services__name {
     color: inherit;
     font-size: 2rem;
-    font-weight: 500;
+    font-family: var(--font-main);
+    font-weight: normal;
     text-align: left;
 }
 
@@ -701,9 +704,103 @@ body {
     display: flex;
 }
 
+.customers__title-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.customers__superscript {
+    margin-bottom: .75rem;
+}
+
 .customers__subtitle {
+    width: 33.33%;
+    padding: 5rem 2.5rem 2.5rem 5rem;
+
+    color: var(--color-light);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 140%;
+    font-family: var(--font-optional);
+    text-transform: uppercase;
+
     background: var(--gradient-1);
 }
+
+.customers__types {
+    display: flex;
+    flex-flow: row wrap;
+
+    width: 100%;
+}
+
+.customers__type {
+    width: 50%;
+    padding: 1.25rem 2.5rem 2.5rem 5rem;
+    margin: 0;
+    box-sizing: border-box;
+
+    border-bottom: solid 1px var(--color-optional-2);
+}
+
+.customers__type:nth-of-type(odd) {
+    border-right: solid 1px var(--color-optional-2);
+}
+
+.customers__type p {
+    margin: 0;
+}
+
+.customers__type--dark {
+    color: var(--color-light);
+
+    background: var(--gradient-1);
+}
+
+.customers__type--dark svg  {
+    fill: var(--color-light);
+}
+
+.customers__type--dark p  {
+    position: relative;
+
+    padding-left: 2.5rem;
+}
+
+.customers__type--dark p::before  {
+    content: '';
+    position: absolute;
+    left: 0;
+    
+    display: block;
+    width: 1.25rem;
+    height: 100%;
+
+    background-color: var(--color-light);
+}
+
+.customers__num {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: .75rem;
+
+    font-family: var(--font-optional);
+    text-align: right;
+}
+
+.customers__graphics {
+    margin-bottom: 5rem;
+}
+
+.customers__icon {
+    fill: var(--color-primary);
+}
+
+.customers__description {
+    font-size: 2rem;
+    line-height: 140%;
+}
+
 
 /* About */
 

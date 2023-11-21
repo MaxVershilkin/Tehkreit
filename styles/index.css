@@ -134,7 +134,7 @@ body {
 
     color: inherit;
     text-align: center;
-    font-size: inherit; 
+    font-size: 1.25rem; 
     font-family: 'TT Autonomous', 'Arial', sans-serif;   
     text-decoration: none;
 
@@ -215,6 +215,10 @@ body {
 .link {
     color: inherit;
     text-decoration: none;
+}
+
+.superscript {
+    font-size: 2rem;
 }
 
 .section-title {
@@ -634,7 +638,7 @@ body {
     align-items: flex-start;
 
     height: 100%;
-    padding: 1.25rem 2.5rem 5rem;
+    padding: 1.25rem 2.5rem 5rem 5rem;
 
     color: var(--color-optional-1);
     font-size: inherit;
@@ -649,6 +653,10 @@ body {
 
 .services__button--accent .services__icon {
     fill: var(--color-light);
+}
+
+.services__button--accent .services__hint {
+    color: var(--color-light);
 }
 
 .services__button:hover,
@@ -678,6 +686,46 @@ body {
     text-align: left;
 }
 
+/* Faq */
+
+.faq {
+    background-color: var(--color-light);
+}
+
+.faq__title-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__superscript {
+    margin-bottom: 1.25rem;
+}
+
+.faq__title {
+    margin-bottom: 0;
+}
+
+.faq__questions li {
+    padding: 2.5rem 5rem;
+    
+    border-bottom: inset 1px var(--color-optional-3);
+}
+
+.faq__question {
+    margin: 0 0 2.5rem 0;
+
+    color: var(--color-accent);
+    font-size: 2rem;
+    font-family: var(--font-optional);
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.faq__answer {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 140%;
+}
 
 
 /* Contacts */
@@ -695,8 +743,8 @@ body {
 .contacts__title-wrap {
     position: relative;
 
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    margin-bottom: 1.25rem;
     z-index: 2;
     
     border: 0;
@@ -715,11 +763,16 @@ body {
 
 .contacts__button {
     position: relative;
+    
+    margin-bottom: 1.25rem;
     z-index: 2;
 }
 
 .contacts__paragraph {
+    margin: 0 0 1.25rem 0;
+
     font-size: 2rem;
+    line-height: 140%;
     z-index: 2;
 }
 
@@ -733,6 +786,10 @@ body {
 
     font-size: 1.5rem;
     line-height: 140%;
+}
+
+.contacts__address {
+    font-style: normal;
 }
 
 .contacts__bg-logo-light {

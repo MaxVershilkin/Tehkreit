@@ -108,8 +108,15 @@ body {
 .paragraph {
     margin: 0;
 
-    font-size: inherit;
-    line-height: inherit;
+    font-size: 1.5rem;
+    line-height: 140%;
+}
+
+.paragraph--increased {
+    margin: 0 0 1.25rem 0;
+
+    font-size: calc(1rem * 2);
+    line-height: 140%;
 }
 
 .visually-hidden {
@@ -684,6 +691,62 @@ body {
     font-size: 2rem;
     font-weight: 500;
     text-align: left;
+}
+
+/* About */
+
+.about {
+    padding: 5rem 2.5rem 0 5rem;
+
+    background-color: var(--color-light);
+}
+
+.about__title {
+    margin-bottom: 2.5rem;
+}
+
+.about__subtitle {
+    margin: 0 0 2.5rem 0;
+
+    font-size: 2rem;
+    font-family: var(--font-optional);
+    text-transform: uppercase;
+    line-height: 140%;
+}
+
+.about__paragraph {
+    margin-bottom: 1.25rem;
+}
+
+.about__paragraph:last-of-type {
+    margin-bottom: 0;
+}
+
+.about__conditions {
+    margin-bottom: 2.5rem;
+}
+
+.about__condition,
+.about__benefit {
+    font-size: 1.5rem;
+    line-height: 140%;
+
+    margin-bottom: 1.25rem;
+}
+
+.about__condition::before {
+    content: '- ';
+
+}
+
+.about__condition:last-of-type {
+    margin-bottom: 0;
+}
+
+.about__benefits {
+    padding-left: 2rem;
+
+    list-style-type: decimal;
 }
 
 /* Faq */

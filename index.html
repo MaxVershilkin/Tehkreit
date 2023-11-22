@@ -92,14 +92,14 @@
               </div>
 
               <ul class="homepage__arrows list">
-                <li>
-                  <button class="homepage__arrow arrow arrow--disabled">
+                <li class="homepage__arrows-item arrow-wrap">
+                  <button class="homepage__arrow arrow arrow--disabled" disabled>
                     <svg class="homepage__arrow-icon arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.75 1L1.75 8L7.75 15" stroke-width="2" stroke-linecap="round"/>
                     </svg>Предыдущий
                   </button>
                 </li>
-                <li>
+                <li class="homepage__arrows-item arrow-wrap">
                   <button class="homepage__arrow arrow">
                     <svg class="homepage__arrow-icon arrow-icon arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.25 15L7.25 8L1.25 1" stroke-width="2" stroke-linecap="round"/>
@@ -472,7 +472,7 @@
     
                   <ul class="projects__arrows list">
     
-                    <li>
+                    <li class="projects__arrows-item arrow-wrap">
                       <button class="projects__arrow arrow arrow--dark arrow--disabled">
                         Предыдущий слайд
                         <svg class="projects__arrow-icon arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -481,7 +481,7 @@
                       </button>
                     </li>
     
-                    <li>
+                    <li class="projects__arrows-item arrow-wrap">
                       <button class="projects__arrow arrow arrow--dark">
                         Следующий слайд
                         <svg class="projects__arrow-icon arrow-icon arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -618,7 +618,7 @@
                 </div>
                 
                 <p class="customers__description">
-                  Промышленные предприятия
+                  Промышленные<br>предприятия
                 </p>
 
               </li>
@@ -991,85 +991,147 @@
 
         <section class="partners">
 
-          <div class="container">
+          <div class="partners__main">
 
-            <div class="partners__main">
+            <div class="partners__title-wrap title-wrap">
 
-              <div class="partners__title-wrap title-wrap">
+              <span class="partners__superscript superscript">
+                Наши
+              </span>
 
-                <span class="partners__superscript superscript">
-                  Наши
-                </span>
-
-                <h2 class="partners__title section-title">
-                  Партнёры
-                </h2>
-
-              </div>
-
-              <div class="partners__nav">
-
-                <div class="partners__nums">
-
-                  <span class="partners__current">
-                    01
-                  </span>
-                  /
-                  <span class="partners__total">
-                    05
-                  </span>
-
-                </div>
-
-                <ul class="partners__arrows">
-
-                  <li>
-                    <button class="partners__arrow partners__arrow--disabled">
-                      Предыдущий шаг
-                    </button>
-                  </li>
-
-                  <li>
-                    <button class="partners__arrow">
-                      Следующий шаг
-                    </button>
-                  </li>
-
-                </ul>
-
-              </div>
+              <h2 class="partners__title section-title">
+                Партнёры
+              </h2>
 
             </div>
 
-            <div class="partners__list-wrap">
+            <div class="partners__nav">
 
-              <ul class="partners__list">
+              <div class="partners__nums">
 
-                <li class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                <span class="partners__current">
+                  01
+                </span>
+                /
+                <span class="partners__total">
+                  05
+                </span>
+
+              </div>
+
+              <ul class="partners__arrows list">
+
+                <li class="arrow-wrap">
+                  <button class="partners__arrow arrow arrow--dark arrow--disabled" disabled>
+                    Предыдущий шаг
+                    <svg class="partners__arrow-icon arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.75 1L1.75 8L7.75 15" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </button>
                 </li>
 
-                <li class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </li>
-
-                <li class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </li>
-
-                <li class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </li>
-
-                <li class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </li>
-
-                <li class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                <li class="arrow-wrap">
+                  <button class="partners__arrow arrow arrow--dark">
+                    Следующий шаг
+                    <svg class="partners__arrow-icon arrow-icon arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.25 15L7.25 8L1.25 1" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </button>
                 </li>
 
               </ul>
+
+            </div>
+
+          </div>
+
+          <div class="partners__list-wrap">
+
+            <div class="partners__list list">
+              
+              <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div>
+
+              <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div>
+
+              <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div>
+
+              <!-- <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div>
+
+              <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div>
+
+              <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div>
+
+              <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div> -->
 
             </div>
 

@@ -22,19 +22,33 @@
           </span>
         </div>
 
-        <div class="main-header__buttons">
+        <ul class="main-header__buttons">
 
-          <a class="main-header__link button" href="mailto:tdpfo@tehkreit.ru">
-            tdpfo@tehkreit.ru
-          </a>
+          <li>
+            <a class="main-header__link button" href="mailto:tdpfo@tehkreit.ru">
+              <svg class="main-header__icon" width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.906845 1.40663C0.906845 0.854347 1.35456 0.406631 1.90685 0.406631H23.9068C24.4591 0.406631 24.9068 0.854347 24.9068 1.40663V16.2066C24.9068 16.7589 24.4591 17.2066 23.9068 17.2066H1.90685C1.35456 17.2066 0.906845 16.7589 0.906845 16.2066V1.40663ZM2.90685 3.20811V15.2066H22.9068V3.20908L12.9069 10.0137L2.90685 3.20811ZM20.531 2.40663H5.28393L12.9069 7.59451L20.531 2.40663Z" fill="#25282A"/>
+              </svg>
+              tdpfo@tehkreit.ru
+            </a>
+          </li>
 
-          <a class="main-header__link button" href="tel:+79277335007">
-            +7 927 733 50 07
-          </a>
+          <li>
+            <a class="main-header__link button" href="tel:+79277335007">
+              <svg class="main-header__icon" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.3112 15.6579C1.3112 15.6579 2.506 14.6541 3.08929 14.2305C3.63495 13.8253 4.5193 13.282 5.00851 13.0057C5.88345 12.5177 6.78661 12.8216 7.15351 13.3096L7.92496 14.2766C8.3201 14.7647 8.93161 14.6818 9.09155 14.6541C10.2299 14.3779 11.4435 13.678 12.676 12.5085C13.9272 11.3205 14.6893 10.0865 14.9527 8.79724L14.9715 8.71436C15.0468 8.18945 14.9527 7.94081 14.7363 7.58166L14.6987 7.54482C14.1812 7.07517 13.2122 6.495 13.0805 5.94246C12.7042 4.98473 14.3506 3.0048 14.5858 2.65486C14.5858 2.65486 15.7806 1.10776 16.2039 0.803861C16.6649 0.426293 17.3705 0.214487 18.0949 0.647308L18.1326 0.674935C20.1929 2.03786 20.9455 2.82983 20.7386 3.99937L20.6257 4.46903C19.5814 7.69217 17.5587 11.1363 14.5481 14.2029C11.5658 17.2327 8.34832 19.0376 5.16844 20.2992C4.34055 20.5663 3.48443 20.3361 2.60949 19.5994L2.59067 19.5902C1.9133 18.9732 1.38646 18.3193 0.991327 17.6102V17.5918C0.605602 16.8459 0.737313 16.1368 1.3112 15.6579Z" fill="#25282A"/>
+              </svg>
+              +7 927 733 50 07
+            </a>
+          </li>
 
-          <button class="main-header__button button">
-            Расчёт окупаемости
-          </button>
+          <li>
+            <button class="main-header__button button">
+              Расчёт окупаемости
+            </button>
+          </li>
+
+        </ul>
 
       </header>
 
@@ -114,7 +128,7 @@
     
         </nav>
 
-        <section class="homepage">
+        <section id="section_1" class="homepage">
 
           <div class="homepage__text">
             <h1 class="homepage__title main-title">
@@ -145,7 +159,7 @@
               <div class="homepage__slides">
 
                 <div class="homepage__slide">
-                  
+                  <img src="/images/img-main-slide-1.jpg" alt="Дизельный генератор">
                 </div>
 
                 <ul class="homepage__dots list">
@@ -192,13 +206,18 @@
             </svg>
           </div>
 
-          <div class="homepage__grid">
-            <div class="homepage__grid-line"></div>
+          <div class="homepage__grid grid">
+            <div class="homepage__grid-column grid-column"></div>
+            <div class="homepage__grid-column grid-column"></div>
+            <div class="homepage__grid-column grid-column"></div>
+            <div class="homepage__grid-column grid-column"></div>
+            <div class="homepage__grid-column grid-column"></div>
+            <div class="homepage__grid-column grid-column"></div>
           </div>
 
         </section>
         
-        <section class="conditions">
+        <section id="section_2" class="conditions">
 
           <div class="container">
 
@@ -270,7 +289,7 @@
 
         </section>
 
-        <section class="services">
+        <section id="section_3" class="services">
 
           <div class="container">
 
@@ -518,7 +537,7 @@
 
         </section>
 
-        <section class="projects">
+        <section id="section_4" class="projects">
 
           <div class="projects__title-wrap title-wrap">
 
@@ -625,7 +644,7 @@
 
         </section>
 
-        <section class="customers">
+        <section id="section_5" class="customers">
 
           <div class="customers__title-wrap title-wrap">
 
@@ -791,7 +810,7 @@
 
         </section>
 
-        <section class="generators">
+        <section id="section_6" class="generators">
 
           <div class="generators__title-wrap title-wrap">
 
@@ -949,7 +968,7 @@
     
                     <li class="generators__indicator">
     
-                      Электрическая
+                      Тепловая
     
                       <span class="generators__value">
                         182
@@ -1024,7 +1043,7 @@
 
         </section>
 
-        <section class="stats">
+        <section id="section_7" class="stats">
 
           <div class="stats__title-wrap title-wrap">
 
@@ -1106,7 +1125,7 @@
 
         </section>
 
-        <section class="partners">
+        <section id="section_8" class="partners">
 
           <div class="partners__main">
 
@@ -1256,7 +1275,7 @@
 
         </section>
 
-        <section class="about">
+        <section id="section_10" class="about">
 
           <div class="container">
 
@@ -1340,7 +1359,7 @@
 
         </section>
 
-        <section class="faq">
+        <section id="section_11" class="faq">
 
           <div class="faq__title-wrap title-wrap">
 
@@ -1396,7 +1415,7 @@
 
         </section>
 
-        <section class="contacts">
+        <section id="section_12" class="contacts">
 
           <div class="contacts__title-wrap title-wrap">
 

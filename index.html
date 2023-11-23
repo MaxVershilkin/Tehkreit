@@ -59,67 +59,67 @@
           <ul class="nav__sections list">
     
             <li>
-              <button class="nev__section dot dot--decreased dot--active">
+              <button class="nav__section dot dot--grey dot--decreased dot--active">
                 Начало
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Возможные проблемы с энергопотреблением
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Услуги
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Реализованные проекты
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Наши заказчики
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Производство газопоршневых электростанций
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 О компании в цифрах
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Наши партнёры
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Производство
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Часто задаваемые вопросы
               </button>
             </li>
     
             <li>
-              <button class="nev__section dot dot--decreased">
+              <button class="nav__section dot dot--grey dot--decreased">
                 Обратная связь
               </button>
             </li>
@@ -1221,18 +1221,6 @@
 
               </div>
 
-              <!-- <div class="partners__item-wrap">
-                
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
-  
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
-
-              </div>
-
               <div class="partners__item-wrap">
                 
                 <picture class="partners__item">
@@ -1267,7 +1255,19 @@
                   <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
                 </picture>
 
-              </div> -->
+              </div>
+
+              <div class="partners__item-wrap">
+                
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+  
+                <picture class="partners__item">
+                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                </picture>
+
+              </div>
 
             </div>
 
@@ -1509,14 +1509,508 @@
 
       </footer>
 
-    </div>
+      <section class="calculation">
 
-    <button class="button button-up">
-      <svg class="button-up__icon" width="16" height="41" viewBox="0 0 16 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8.98274 0.292893C8.59222 -0.0976317 7.95905 -0.0976317 7.56853 0.292893L1.20457 6.65685C0.814041 7.04738 0.814041 7.68054 1.20457 8.07107C1.59509 8.46159 2.22825 8.46159 2.61878 8.07107L8.27563 2.41421L13.9325 8.07107C14.323 8.46159 14.9562 8.46159 15.3467 8.07107C15.7372 7.68054 15.7372 7.04738 15.3467 6.65685L8.98274 0.292893ZM9.27563 41L9.27563 0.999999L7.27563 0.999999L7.27563 41L9.27563 41Z" />
-      </svg>
-      Прокрутка вверх
-    </button>
+        <div class="calculation__wrap container">
+
+          <div class="calculation__main">
+
+            <button class="calculation__close button-close">
+              Закрыть
+            </button>
+  
+            <div class="calculation__title-wrap">
+  
+              <h2 class="calculation__title section-title">
+                Расчёт срока окупаемости
+              </h2>
+  
+              <span class="calculation__superscript superscript">
+                Когенерационной генераторной установки (КГУ)
+              </span>
+  
+            </div>
+  
+            <form class="calculation__form form" action="">
+  
+              <fieldset class="calculation__field field">
+  
+                <legend class="calculation__legend legend visually-hidden">
+                  Форма для расчёта срока окупаемости
+                </legend>
+  
+                <div class="calculation__input-wrap input-wrap">
+  
+                  <label class="calculation__label label" for="generator-model">
+                    Модель КГУ
+                  </label>
+    
+                  <select class="calculation__select select" name="generator-model" id="generator-model" autofocus>
+                    
+                    <option class="calculation__option option" value="TK-165K">
+                      TK-165K
+                    </option>
+    
+                    <option class="calculation__option option" value="TK-250VM" selected>
+                      TK-250VM
+                    </option>
+    
+                    <option class="calculation__option option" value="TK-500VM">
+                      TK-500VM
+                    </option>
+    
+                    <option class="calculation__option option" value="TK-1000HND">
+                      TK-1000HND
+                    </option>
+    
+                  </select>
+    
+                </div>
+    
+                <div class="calculation__input-wrap input-wrap">
+    
+                  <label class="calculation__label label" for="generator-model">
+                    Коэффициент использования тепловой энергии от КГУ
+                  </label>
+    
+                  <select class="calculation__select select" name="generator-koe" id="generator-koe">
+                    
+                    <option class="calculation__option option" value="1">
+                      1
+                    </option>
+    
+                    <option class="calculation__option option" value="0.95">
+                      0.95
+                    </option>
+    
+                    <option class="calculation__option option" value="0.9">
+                      0.9
+                    </option>
+    
+                    <option class="calculation__option option" value="0.8">
+                      0.8
+                    </option>
+    
+                    <option class="calculation__option option" value="0.7">
+                      0.7
+                    </option>
+    
+                    <option class="calculation__option option" value="0.6">
+                      0.6
+                    </option>
+    
+                    <option class="calculation__option option" value="0.5" selected>
+                      0.5
+                    </option>
+    
+                    <option class="calculation__option option" value="0.4">
+                      0.4
+                    </option>
+    
+                    <option class="calculation__option option" value="0.2">
+                      0.2
+                    </option>
+    
+                    <option class="calculation__option option" value="0.1">
+                      0.1
+                    </option>
+    
+                    <option class="calculation__option option" value="0">
+                      0
+                    </option>
+    
+                  </select>
+    
+                </div>
+    
+                <div class="calculation__input-wrap input-wrap">
+    
+                  <label class="calculation__label label" for="generator-model">
+                    Источник тепла на предприятии
+                  </label>
+    
+                  <select class="calculation__select select" name="generator-source" id="generator-source">
+                    
+                    <option class="calculation__option option" value="inner" selected>
+                      Собственная котельная
+                    </option>
+    
+                    <option class="calculation__option option" value="outer">
+                      Городская теплосеть
+                    </option>
+    
+                  </select>
+    
+                </div>
+    
+                <div class="calculation__input-wrap input-wrap">
+    
+                  <label class="calculation__label label" for="generator-model">
+                    Количество часов работы в месяц
+                  </label>
+    
+                  <select class="calculation__select select" name="generator-volume" id="generator-volume">
+                    
+                    <option class="calculation__option option" value="720" selected>
+                      720
+                    </option>
+    
+                    <option class="calculation__option option" value="710">
+                      710
+                    </option>
+    
+                    <option class="calculation__option option" value="700">
+                      700
+                    </option>
+    
+                    <option class="calculation__option option" value="690">
+                      690
+                    </option>
+                    
+                    <option class="calculation__option option" value="680">
+                      680
+                    </option>
+    
+                    <option class="calculation__option option" value="670">
+                      670
+                    </option>
+    
+                    <option class="calculation__option option" value="660">
+                      660
+                    </option>
+    
+                    <option class="calculation__option option" value="650">
+                      650
+                    </option>
+    
+                  </select>
+    
+                </div>
+    
+                <div class="calculation__input-wrap input-wrap">
+    
+                  <label class="calculation__label label" for="generator-model">
+                    Средняя электрическая мощность, на которой будет работать КГУ, кВт
+                  </label>
+    
+                  <select class="calculation__select select" name="generator-power" id="generator-power">
+                    
+                    <option class="calculation__option option" value="1000" selected>
+                      1000
+                    </option>
+    
+                    <option class="calculation__option option" value="950">
+                      950
+                    </option>
+    
+                    <option class="calculation__option option" value="900">
+                      900
+                    </option>
+    
+                    <option class="calculation__option option" value="850">
+                      850
+                    </option>
+    
+                    <option class="calculation__option option" value="800">
+                      800
+                    </option>
+    
+                  </select>
+    
+                </div>
+    
+                <div class="calculation__input-wrap input-wrap">
+    
+                  <label class="calculation__label label" for="calc-elec-costs">
+                    Стоимость электроэнергии из сети (с учётом платы за мощность), руб. с НДС
+                  </label>
+    
+                  <input class="calculation__input input input--unselectable" type="text" id="calc-elec-costs" value="5.5" placeholder="5.5">
+    
+                </div>
+    
+                <div class="calculation__input-wrap input-wrap">
+    
+                  <label class="calculation__label label" for="calc-gas-costs">
+                    Стоимость электроэнергии из сети (с учётом платы за мощность), руб. с НДС
+                  </label>
+    
+                  <input class="calculation__input input input--unselectable" type="text" id="calc-gas-costs" value="5.7" placeholder="5.7">
+    
+                </div>
+    
+                <div class="calculation__input-wrap input-wrap">
+    
+                  <label class="calculation__label label" >
+                    Себестоимость 1 Гкал тепла (только затраты на газ), руб. с НДС
+                  </label>
+    
+                  <input class="calculation__input input input--unselectable" type="text" value="792.3" placeholder="792.3" readonly>
+    
+                </div>
+  
+              </fieldset>
+
+              <button class="calculation__button button button--dark">
+                Рассчитать
+              </button>
+  
+            </form>
+
+          </div>
+
+          <div class="calculation__contacts">
+
+            <span class="calculation__title section-title">
+              Обратная связь
+            </span>
+
+            <span class="calculation__superscript superscript">
+              Для получения результатов оценки стоимости, заполните форму ниже и наш менеджер свяжеться с Вами в ближайшее время
+            </span>
+
+            <form class="calculation__contacts-form form form--light" action="">
+              
+              <fieldset class="calculation__contacts-field field">
+
+                <input class="calculation__contacts-input input input--failed" type="text" placeholder="Введите Ваше имя">
+
+                <input class="calculation__contacts-input input input--failed" type="password" placeholder="Введите Ваше имя">
+
+                <input class="calculation__contacts-input input input--failed" type="mail" placeholder="Введите Ваше имя">
+
+                <input class="calculation__checkbox checkbox" type="checkbox">
+
+                <button type="button" class="calculation__contacts-agreement button button--special">
+                  Нажимая «Отправить», Вы подтверждаете, что ознакомлены, полностью согласны и принимаете условия «Согласие на обработку персональных данных»
+                </button>
+
+                <button class="calculation__contact-button button" type="submit" disabled>
+                  Отправить
+                </button>
+
+              </fieldset>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="feedback" disabled>
+
+        <div class="container">
+
+          <button class="feedback__close button button--clean button-close">
+            <svg class="feedback__close-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 1L1 21M1 1L21 21" stroke="#25282A" stroke-width="2"/>
+            </svg>              
+            Закрыть
+          </button>
+
+          <div class="feedback__title-wrap title-wrap">
+
+            <h2 class="feedback__title section-title">
+              Обратная связь
+            </h2>
+  
+            <span class="feedback__subtitle subtitle">
+              Наши сотрудники помогут выполнить подбор оборудования и расчёт цены с учётом Ваших требований
+            </span>
+
+          </div>
+
+          <form class="feedback__form form" action="">
+
+            <ul class="feedback__inputs list">
+
+              <li>
+                <label class="feedback__label label visually-hidden" for="name">
+                  Имя
+                </label>
+                <input id="name" class="feedback__input input" type="text" placeholder="Введите ваше имя">
+              </li>
+
+              <li>
+                <label class="feedback__label label visually-hidden" for="phone">
+                  Телефон
+                </label>
+                <input id="phone" class="feedback__input input" type="phone" placeholder="Введите Ваш телефон">
+              </li>
+
+              <li>
+                <label class="feedback__label label visually-hidden" for="mail">
+                  Почта
+                </label>
+                <input id="mail" class="feedback__input input" type="mail" placeholder="Введите Ваш e-mail">
+              </li>
+
+            </ul>
+
+            <label class="visually-hidden" for="checkbox">
+              Согласие с обработкой персональных данных
+            </label>
+            <input id="checkbox" class="feedback__checkbox visually-hidden" type="checkbox" checked disabled>
+
+            <button class="feedback__agreement button button--special">
+              Нажимая «Отправить», Вы подтверждаете, что ознакомлены, полностью согласны и принимаете условия «Согласие на обработку персональных данных»
+            </button>
+
+            <button class="feedback__button button button--dark-stroked" type="submit">
+              Отправить
+            </button>
+
+          </form>
+
+          <div class="feedback__contacts">
+
+            <span class="feedback__contacts-title title-h3">
+              Контакты
+            </span>
+
+            <address class="feedback__contacts-address address">
+              г. Самара ул. 6-я просека, дом № 149 офис 22
+            </address>
+
+            <ul class="feedback__contacts-links list">
+
+              <li>
+                <a class="feedback__contacts-link link link--light" href="tel:+79272040555">
+                  +7 (927) 204 05 55
+                </a>
+              </li>
+
+              <li>
+                <a class="feedback__contacts-link link link--light" href="mailto:tdpfo@tehkreit.ru">
+                  tdpfo@tehkreit.ru
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="agreement">
+
+        <div class="agreement__wrap container">
+
+          <button class="agreement__close button-close">
+            <svg class="agreement__close-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 1L1 21M1 1L21 21" stroke-width="2"/>
+            </svg> 
+            Закрыть
+          </button>
+
+          <span class="agreement__title title">
+            Согласие на обработку персональных данных
+          </span>
+
+          <div class="agreement__content scrolling">
+
+            <div class="agreement__content-scroll">
+
+              <p class="agreement__paragraph paragraph">
+                Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года свободно, своей волей и в своем интересе выражаю свое безусловное согласие на обработку моих персональных данных , зарегистрированным в соответствии с законодательством РФ по адресу: (далее по тексту - Оператор).
+              </p>
+  
+              <p class="agreement__paragraph paragraph">
+                Персональные данные - любая информация, относящаяся к определенному или определяемому на основании такой информации физическому лицу.
+              </p>
+  
+              <p class="agreement__paragraph paragraph">
+                Настоящее Согласие выдано мною на обработку следующих персональных данных:
+              </p>
+  
+              <ul class="agreement__list list">
+  
+                <li>
+                  ФИО;
+                </li>
+  
+                <li>
+                  телефон;
+                </li>
+  
+                <li>
+                  электронный адрес;
+                </li>
+  
+                <li>
+                  IP-адрес.
+                </li>
+  
+              </ul>
+  
+              <p class="agreement__paragraph paragraph">
+                Согласие дано Оператору для совершения следующих действий с моими персональными данными с использованием средств автоматизации и/или без использования таких средств: сбор, систематизация, накопление, хранение, уточнение (обновление, изменение), использование, обезличивание, а также осуществление любых иных действий, предусмотренных действующим законодательством РФ как неавтоматизированными, так и автоматизированными способами.
+              </p>
+  
+              <p class="agreement__paragraph paragraph">
+                Данное согласие дается Оператору для обработки моих персональных данных в следующих целях:
+              </p>
+  
+              <ul class="agreement__list list">
+  
+                <li>
+                  предоставление мне услуг/работ;
+                </li>
+  
+                <li>
+                  направление в мой адрес уведомлений, касающихся предоставляемых услуг/работ;
+                </li>
+  
+                <li>
+                  подготовка и направление ответов на мои запросы;
+                </li>
+  
+                <li>
+                  направление в мой адрес информации, в том числе рекламной, о мероприятиях/товарах/услугах/работах Оператора.
+                </li>
+  
+              </ul>
+  
+              <p class="agreement__paragraph paragraph">
+                Настоящее согласие действует до момента его отзыва путем направления соответствующего уведомления на электронный адрес support@prural.ru. В случае отзыва мною согласия на обработку персональных данных Оператор вправе продолжить обработку персональных данных без моего согласия при наличии оснований, указанных в пунктах 2 – 11 части 1 статьи 6, части 2 статьи 10 и части 2 статьи 11 Федерального закона №152-ФЗ «О персональных данных» от 27.07.2006 г.
+              </p>
+
+            </div>
+
+          </div>
+
+          <ul class="agreement__buttons list">
+
+            <li>
+              <button class="agreement__button button button--dark">
+                Принимаю
+              </button>
+            </li>
+
+            <li>
+              <button class="agreement__button button button--dark-stroked">
+                Не принимаю
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+      <button class="button button-up">
+        <svg class="button-up__icon" width="16" height="41" viewBox="0 0 16 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.98274 0.292893C8.59222 -0.0976317 7.95905 -0.0976317 7.56853 0.292893L1.20457 6.65685C0.814041 7.04738 0.814041 7.68054 1.20457 8.07107C1.59509 8.46159 2.22825 8.46159 2.61878 8.07107L8.27563 2.41421L13.9325 8.07107C14.323 8.46159 14.9562 8.46159 15.3467 8.07107C15.7372 7.68054 15.7372 7.04738 15.3467 6.65685L8.98274 0.292893ZM9.27563 41L9.27563 0.999999L7.27563 0.999999L7.27563 41L9.27563 41Z" />
+        </svg>
+        Прокрутка вверх
+      </button>
+
+    </div>
 
   </body>
   <script src="scripts/main.js"></script>

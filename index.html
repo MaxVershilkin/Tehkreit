@@ -904,7 +904,7 @@
                     <ul class="generators__dots list">
 
                       <li>
-                        <button class="generators__dot dot dot--active">
+                        <button class="generators__dot dot dot--active" disabled>
                           Генератор tk-165k
                         </button>
                       </li>
@@ -1513,7 +1513,7 @@
 
         <div class="calculation__wrap container">
 
-          <div class="calculation__main">
+          <div class="calculation__main container-inner">
 
             <button class="calculation__close button-close">
               Закрыть
@@ -1547,23 +1547,58 @@
     
                   <select class="calculation__select select" name="generator-model" id="generator-model" autofocus>
                     
-                    <option class="calculation__option option" value="TK-165K">
+                    <option class="calculation__option option" value="TK-165K" >
                       TK-165K
                     </option>
     
-                    <option class="calculation__option option" value="TK-250VM" selected>
+                    <option class="calculation__option option" value="TK-250VM" selected >
                       TK-250VM
                     </option>
     
-                    <option class="calculation__option option" value="TK-500VM">
+                    <option class="calculation__option option" value="TK-500VM" >
                       TK-500VM
                     </option>
     
-                    <option class="calculation__option option" value="TK-1000HND">
+                    <option class="calculation__option option" value="TK-1000HND" >
                       TK-1000HND
                     </option>
     
                   </select>
+
+                  <button class="calculation__select select select-item" type="button" type="button" >
+                    TK-165K
+                    <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L21 1" stroke-width="2"/>
+                    </svg>
+                  </button>
+
+                  <ul class="calculation__select-list select-list list">
+
+                    <li>
+                      <button class="calculation__select-button button-select button-select--active" type="button">
+                        TK-165K
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        TK-250VM
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        TK-500VM
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        TK-1000HND
+                      </button>
+                    </li>
+
+                  </ul>
     
                 </div>
     
@@ -1620,6 +1655,95 @@
                     </option>
     
                   </select>
+
+                  <button class="calculation__select select select-item" type="button" type="button" >
+                    1
+                    <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L21 1" stroke-width="2"/>
+                    </svg>
+                  </button>
+
+                  <ul class="calculation__select-list select-list list">
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        1
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.9
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.95
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.9
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.8
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.7
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.6
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select button-select--active">
+                        0.5
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.4
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.3
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.2
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0.1
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        0
+                      </button>
+                    </li>
+
+                  </ul>
     
                 </div>
     
@@ -1640,6 +1764,29 @@
                     </option>
     
                   </select>
+
+                  <button class="calculation__select select select-item" type="button" type="button">
+                    Собственная котельная
+                    <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L21 1" stroke-width="2"/>
+                    </svg>
+                  </button>
+
+                  <ul class="calculation__select-list select-list list">
+
+                    <li>
+                      <button class="calculation__select-button button-select button-select--active">
+                        Собственная котельная
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        Городская теплосеть
+                      </button>
+                    </li>
+
+                  </ul>
     
                 </div>
     
@@ -1684,6 +1831,65 @@
                     </option>
     
                   </select>
+
+                  <button class="calculation__select select select-item" type="button">
+                    720
+                    <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L21 1" stroke-width="2"/>
+                    </svg>
+                  </button>
+
+                  <ul class="calculation__select-list select-list list">
+
+                    <li>
+                      <button class="calculation__select-button button-select button-select--active">
+                        720
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        710
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        700
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        690
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        680
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        670
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        660
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        650
+                      </button>
+                    </li>
+
+                  </ul>
     
                 </div>
     
@@ -1716,6 +1922,47 @@
                     </option>
     
                   </select>
+
+                  <button class="calculation__select select select-item" type="button">
+                    1000
+                    <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L11 11L21 1" stroke-width="2"/>
+                    </svg>
+                  </button>
+
+                  <ul class="calculation__select-list select-list list">
+
+                    <li>
+                      <button class="calculation__select-button button-select button-select--active">
+                        1000
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        950
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        900
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        850
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="calculation__select-button button-select" type="button" >
+                        800
+                      </button>
+                    </li>
+
+                  </ul>
     
                 </div>
     
@@ -1751,7 +1998,7 @@
   
               </fieldset>
 
-              <button class="calculation__button button button--dark">
+              <button class="calculation__button button button--dark" type="button">
                 Рассчитать
               </button>
   
@@ -1759,7 +2006,7 @@
 
           </div>
 
-          <div class="calculation__contacts">
+          <div class="calculation__contacts container-inner">
 
             <span class="calculation__title section-title">
               Обратная связь
@@ -1773,20 +2020,38 @@
               
               <fieldset class="calculation__contacts-field field">
 
-                <input class="calculation__contacts-input input input--failed" type="text" placeholder="Введите Ваше имя">
+                <input class="calculation__contacts-result visually-hidden" name="configuration" type="text" value="model:250vm%koe:0.5%source:inner%volume:720%elec:5.5%gas:5.7%costself:792.3">
 
-                <input class="calculation__contacts-input input input--failed" type="password" placeholder="Введите Ваше имя">
+                <div class="calculation__contacts-wrap input-wrap">
 
-                <input class="calculation__contacts-input input input--failed" type="mail" placeholder="Введите Ваше имя">
+                  <input class="calculation__contacts-input input input--light" type="text" name="name" placeholder="Введите Ваше имя" >
+                  
+                  <div class="calculation__hint hint">
+                    Введите корректные данные
+                  </div>
 
-                <input class="calculation__checkbox checkbox" type="checkbox">
+                </div>
 
-                <button type="button" class="calculation__contacts-agreement button button--special">
+                <div class="calculation__contacts-wrap">
+
+                  <input class="calculation__contacts-input input input--light" type="phone" name="phone" placeholder="Введите Ваш телефон">
+
+                </div>
+
+                <div>
+
+                  <input class="calculation__contacts-input input input--light" type="mail" name="mail" placeholder="Введите Ваш e-mail">
+
+                </div>
+
+                <input class="calculation__checkbox checkbox visually-hidden" type="checkbox" disabled>
+
+                <button class="calculation__contacts-agreement button button--special" type="button">
                   Нажимая «Отправить», Вы подтверждаете, что ознакомлены, полностью согласны и принимаете условия «Согласие на обработку персональных данных»
                 </button>
 
-                <button class="calculation__contact-button button" type="submit" disabled>
-                  Отправить
+                <button class="calculation__contact-button button button--stroked" type="submit" disabled>
+                  Получить расчёт
                 </button>
 
               </fieldset>

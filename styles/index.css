@@ -1481,7 +1481,14 @@ img {
 }
 
 .generators__power-title {
+    display: flex;
+    align-items: center;
+    gap: 0 1.875rem;
+
     margin-bottom: 5rem;
+}
+
+.generators__power-title span {
 
     font-size: 3rem;
     line-height: 120%;

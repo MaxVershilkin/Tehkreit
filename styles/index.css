@@ -799,14 +799,6 @@ img {
     padding-right: 2.5rem;
 }
 
-.card {
-    display: none;
-}
-
-.card--active {
-    display: flex;
-}
-
 /* Main */
 
 .main-title {
@@ -1147,7 +1139,8 @@ img {
     color: var(--color-optional-1);
     font-size: inherit;
 
-    transition: background-color .4s ease-out;
+    transition: color .4s ease-out,
+                background-color .4s ease-out;
 }
 
 .services__button--accent {
@@ -1185,6 +1178,8 @@ img {
 .services__hint {
     color: var(--color-optional-1);
     font-family: var(--font-optional);
+
+    transition: color .4s ease-out;
 }
 
 .services__graphics {
@@ -2439,9 +2434,9 @@ img {
     flex: 1 0 100%;
 }
 
-/* Card-service */
+/* service */
 
-.card-service {
+.service {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -2449,32 +2444,48 @@ img {
     right: 0;
     z-index: 999;
 
+    display: none;
     justify-content: center;
     align-items: center;
 
-    width: 1280px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
-.card-service__wrap {
+.service--active {
+    display: flex;
+}
+
+.service--active .service__content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service__content {
     position: relative;
 
     display: flex;
     flex-direction: column;
     gap: 2.5rem 0;
+    width: 1280px;
 
+    opacity: 0;
     padding: 3.75rem 2.5rem 2.5rem;
     background-color: var(--color-light);
     box-shadow: 0 0 1rem var(--color-primary-trns-025);
+
+    transition: opacity .4s ease-out,
+                transform .4s ease-out;
 }
 
-.card-service__close {
+.service__close {
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
 }
 
-.card-service__num {
+.service__num {
     position: absolute;
     top: 0;
     left: 1.25rem;
@@ -2489,27 +2500,27 @@ img {
     opacity: .05;
 }
 
-.card-service__main {
+.service__main {
     display: flex;
     flex-direction: column;
     gap: 1.25rem 0;
     z-index: 2;
 }
 
-.card-service__title {
+.service__title {
     font-size: 1.5rem;
     font-family: var(--font-optional);
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.card-service__list {
+.service__list {
     display: flex;
     flex-direction: column;
     gap: 1.25rem 0;
 }
 
-.card-service__item {
+.service__item {
     display: flex;
     align-items: center;
     gap: 0 1.25rem;
@@ -2518,12 +2529,12 @@ img {
     line-height: 140%;
 }
 
-.card-service__item span {
+.service__item span {
     display: flex;
     gap: 0 1.25rem;
 }
 
-.card-service__icon {
+.service__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2532,17 +2543,18 @@ img {
     height: 3rem;
 }
 
-.card-service__icon svg {
+.service__icon svg {
     stroke: var(--color-primary);
 }
 
-.card-service__info {
+.service__info {
     display: flex;
     flex-direction: column;
     gap: 1.25rem 0;
+    z-index: 2;
 }
 
-.card-service__subtitle {
+.service__subtitle {
     color: var(--color-accent);
     font-size: 1.25rem;
     font-family: var(--font-optional);
@@ -2551,27 +2563,58 @@ img {
     text-transform: uppercase;
 }
 
-.card-service__info-list {
+.service__info-list {
     display: flex;
     flex-direction: column;
     gap: 1.25rem 0;
 }
 
-.card-service__info-item {
+.service__info-item {
     display: flex;
-    flex-direction: column;
-    gap: 1.25rem 0;
+    flex-direction: flex;
+    align-items: center;
+    gap: 0 1.25rem;
 
     font-size: 1.25rem;
 }
 
-.card-service__info-item div {
+.service__info-item div {
     display: flex;
     gap: 0 1.25rem;
 
     font-size: 1.25rem;
 }
 
-.card-service__button {
+.service__info-item--cutted {
+    display: flex;
+    flex-direction: column;
+}
+
+.service__info-item--cutted div {
+    display: flex;
+    flex-direction: column;
     align-self: flex-start;
+}
+
+.service__button {
+    align-self: flex-start;
+    z-index: 2;
+}
+
+.service__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 250px;
+
+    z-index: 1;
+}
+
+.service__bg svg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    fill: var(--color-optional-3);
 }

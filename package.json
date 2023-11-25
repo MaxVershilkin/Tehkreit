@@ -1,0 +1,8 @@
+{
+  "name": "Tehkreit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MaxVershilkin/Tehkreit.git",
+  "author": "Max Vershilkin <vma90@inbox.ru>",
+  "license": "MIT"
+}

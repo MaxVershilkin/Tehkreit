@@ -2026,7 +2026,7 @@ img {
     outline: none;
 }
 
-/* Side panel */
+/* Nav */
 
 .nav {
     position: fixed;
@@ -2069,11 +2069,6 @@ img {
                 opacity .4s ease-out;
 }
 
-.nav__section:focus,
-.nav__section:hover {
-    background-color: var(--color-accent);
-}
-
 .nav__section--active {
     background-color: var(--color-accent);
 }
@@ -2089,7 +2084,6 @@ img {
     display: flex;
     align-content: center;
     height: 140%;
-
     padding: 0 1.25rem .5rem 1.25rem;
 
     font-size: 1rem;

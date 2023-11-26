@@ -2578,22 +2578,30 @@ img {
     font-size: 1.25rem;
 }
 
-.service__info-item div {
-    display: flex;
-    gap: 0 1.25rem;
-
-    font-size: 1.25rem;
-}
-
 .service__info-item--cutted {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem 0;
+
+    font-size: 1.5rem;
+
 }
 
-.service__info-item--cutted div {
+.service__info-title {
     display: flex;
-    flex-direction: column;
-    align-self: flex-start;
+    gap: 0 1.25rem;
+}
+
+.service__info-num {
+    display: flex;
+    gap: 0 1.25rem;
+
+    font-size: 1.5rem;
+}
+
+.service__info-description {
+    font-size: 1.25rem;
 }
 
 .service__button {

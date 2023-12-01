@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/MaxVershilkin/Tehkreit.git",
   "author": "Max Vershilkin <vma90@inbox.ru>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2"
+  }
 }

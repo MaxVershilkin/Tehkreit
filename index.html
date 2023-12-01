@@ -160,12 +160,15 @@
   
                     <div class="homepage__slide homepage__slide--active">
                       <picture>
+                        <!-- <source srcset="/images/img-main-slide-1-phone-x1.jpg 1x, /images/img-main-slide-1-phone-x1.jpg 2x" media="(max-width:360px)"> -->
+                        <source srcset="/images/img-main-slide-1-tablet-x1.jpg 1x, /images/img-main-slide-1-tablet-x1.jpg 2x" media="(max-width:1080px)">
                         <img src="/images/img-main-slide-1.jpg" alt="Дизельный генератор">
                       </picture>
                     </div>
     
                     <div class="homepage__slide">
                       <picture>
+                        <source srcset="/images/img-main-slide-2-tablet-x1.jpg 1x, /images/img-main-slide-2-tablet-x1.jpg 2x" media="(max-width:1080px)">
                         <img src="/images/img-main-slide-2.jpg" alt="Дизельный генератор">
                       </picture>
                     </div>
@@ -1217,11 +1220,11 @@
             <div class="projects__title-wrap title-wrap">
 
               <span class="projects__superscript superscript">
-                Проекты
+                Выполненные
               </span>
   
               <h2 class="projects__title section-title">
-                Выполненные работы      
+                Проекты      
               </h2>
   
             </div>
@@ -1506,7 +1509,7 @@
 
             <div class="generators__slides">
 
-              <div class="generators__slide">
+              <div class="generators__slide generators__slide--active">
 
                 <div class="generators__description">
 
@@ -1522,7 +1525,7 @@
 
                   </div>
 
-                  <ul class="generators__arrows list">
+                  <ul class="generators__arrows-mobile list">
     
                     <li class="generators__arrows-item arrow-wrap">
                       <button class="generators__arrow arrow arrow--dark arrow--disabled" disabled>
@@ -1544,7 +1547,7 @@
     
                   </ul>
 
-                  <div class="generators__graphics">
+                  <div class="generators__graphics-mobile">
 
                     <div class="generators__images">
         
@@ -1578,7 +1581,7 @@
 
                   <div class="generators__info-wrap">
 
-                    <ul class="generators__dots list">
+                    <ul class="generators__dots-mobile list">
 
                       <li>
                         <button class="generators__dot dot dot--active" disabled>
@@ -1666,7 +1669,7 @@
     
                   </ul>
     
-                  <ul class="generators__buttons list">
+                  <ul class="generators__buttons-mobile list">
     
                     <li>
                       <button class="generators__button button button--dark">
@@ -1682,15 +1685,653 @@
     
                   </ul>
 
-                  <span class="generators__bg-model">
-                    165k
-                  </span>
+                </div>
+
+              </div>
+
+              <div class="generators__slide">
+
+                <div class="generators__description">
+
+                  <div class="generators__description-wrap">
+
+                    <div class="generators__model">
+                      <span class="generators__model-series">TK-</span>250vm
+                    </div>
+      
+                    <p class="generators__type">
+                      Газопоршневая  когенерационная установка
+                    </p>
+
+                  </div>
+
+                  <ul class="generators__arrows-mobile list">
+    
+                    <li class="generators__arrows-item arrow-wrap">
+                      <button class="generators__arrow arrow arrow--dark arrow--disabled" disabled>
+                        <svg class="generators__arrow-icon arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.75 1L1.75 8L7.75 15" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Предыдущий генератор
+                      </button>
+                    </li>
+    
+                    <li class="generators__arrows-item arrow-wrap">
+                      <button class="generators__arrow arrow arrow--dark">
+                        <svg class="generators__arrow-icon arrow-icon arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.25 15L7.25 8L1.25 1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Следующий генератор
+                      </button>
+                    </li>
+    
+                  </ul>
+
+                  <div class="generators__graphics-mobile">
+
+                    <div class="generators__images">
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-165k.png" alt="Дизельный генератор TK-165K">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap generators__image-wrap--active">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-250vm.png" alt="Дизельный генератор TK-250VM">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-500vm.png" alt="Дизельный генератор TK-500VM">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-1000hnd.png" alt="Дизельный генератор TK-1000HND">
+                        </picture>
+                      </div>
+        
+                    </div>
+        
+                  </div>
+
+                  <div class="generators__info-wrap">
+
+                    <ul class="generators__dots-mobile list">
+
+                      <li>
+                        <button class="generators__dot dot dot--active" disabled>
+                          Генератор tk-165k
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-250vm
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-500vm
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-1000hnd
+                        </button>
+                      </li>
+        
+                    </ul>
+  
+                    <div class="generators__range-wrap">
+      
+                      <span class="generators__range">
+                        63 - 250 квт
+                      </span>
+      
+                      <span class="generators__range-description">
+                        Диапазон рабочей электрической мощности
+                      </span>
+      
+                    </div>
+
+                  </div>
+
+                </div> 
+                
+                <div class="generators__power">
+
+                  <div class="generators__power-title">
+
+                    <svg width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.3305 0L0 24.5053H14.3116L2.74105 48L31.4779 15.8021H16.6989L26.3874 0H11.3305Z" fill="#A1C437"/>
+                    </svg>
+
+                    <span>
+                      Мощность
+                    </span>
+
+                  </div>
+    
+                  <ul class="generators__indicators list">
+    
+                    <li class="generators__indicator">
+    
+                      Электрическая
+    
+                      <span class="generators__value">
+                        250
+                        <span class="generators__measure">
+                          квт
+                        </span>
+                      </span>
+    
+                    </li>
+    
+                    <li class="generators__indicator">
+    
+                      Тепловая
+    
+                      <span class="generators__value">
+                        275
+                        <span class="generators__measure">
+                          квт
+                        </span>
+                      </span>
+    
+                    </li>
+    
+                  </ul>
+    
+                  <ul class="generators__buttons-mobile list">
+    
+                    <li>
+                      <button class="generators__button button button--dark">
+                        Оставить заявку
+                      </button>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="generators__button button button--dark-stroked" download>
+                        Скачать каталог
+                      </a>
+                    </li>
+    
+                  </ul>
+
+                </div>
+
+              </div>
+
+              <div class="generators__slide">
+
+                <div class="generators__description">
+
+                  <div class="generators__description-wrap">
+
+                    <div class="generators__model">
+                      <span class="generators__model-series">TK-</span>500vm
+                    </div>
+      
+                    <p class="generators__type">
+                      Газопоршневая  когенерационная установка
+                    </p>
+
+                  </div>
+
+                  <ul class="generators__arrows-mobile list">
+    
+                    <li class="generators__arrows-item arrow-wrap">
+                      <button class="generators__arrow arrow arrow--dark arrow--disabled" disabled>
+                        <svg class="generators__arrow-icon arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.75 1L1.75 8L7.75 15" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Предыдущий генератор
+                      </button>
+                    </li>
+    
+                    <li class="generators__arrows-item arrow-wrap">
+                      <button class="generators__arrow arrow arrow--dark">
+                        <svg class="generators__arrow-icon arrow-icon arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.25 15L7.25 8L1.25 1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Следующий генератор
+                      </button>
+                    </li>
+    
+                  </ul>
+
+                  <div class="generators__graphics-mobile">
+
+                    <div class="generators__images">
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-165k.png" alt="Дизельный генератор TK-165K">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap generators__image-wrap--active">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-250vm.png" alt="Дизельный генератор TK-250VM">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-500vm.png" alt="Дизельный генератор TK-500VM">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-1000hnd.png" alt="Дизельный генератор TK-1000HND">
+                        </picture>
+                      </div>
+        
+                    </div>
+        
+                  </div>
+
+                  <div class="generators__info-wrap">
+
+                    <ul class="generators__dots-mobile list">
+
+                      <li>
+                        <button class="generators__dot dot dot--active" disabled>
+                          Генератор tk-165k
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-250vm
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-500vm
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-1000hnd
+                        </button>
+                      </li>
+        
+                    </ul>
+  
+                    <div class="generators__range-wrap">
+      
+                      <span class="generators__range">
+                        130 - 500 квт
+                      </span>
+      
+                      <span class="generators__range-description">
+                        Диапазон рабочей электрической мощности
+                      </span>
+      
+                    </div>
+
+                  </div>
+
+                </div> 
+                
+                <div class="generators__power">
+
+                  <div class="generators__power-title">
+
+                    <svg width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.3305 0L0 24.5053H14.3116L2.74105 48L31.4779 15.8021H16.6989L26.3874 0H11.3305Z" fill="#A1C437"/>
+                    </svg>
+
+                    <span>
+                      Мощность
+                    </span>
+
+                  </div>
+    
+                  <ul class="generators__indicators list">
+    
+                    <li class="generators__indicator">
+    
+                      Электрическая
+    
+                      <span class="generators__value">
+                        500
+                        <span class="generators__measure">
+                          квт
+                        </span>
+                      </span>
+    
+                    </li>
+    
+                    <li class="generators__indicator">
+    
+                      Тепловая
+    
+                      <span class="generators__value">
+                        550
+                        <span class="generators__measure">
+                          квт
+                        </span>
+                      </span>
+    
+                    </li>
+    
+                  </ul>
+    
+                  <ul class="generators__buttons-mobile list">
+    
+                    <li>
+                      <button class="generators__button button button--dark">
+                        Оставить заявку
+                      </button>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="generators__button button button--dark-stroked" download>
+                        Скачать каталог
+                      </a>
+                    </li>
+    
+                  </ul>
+
+                </div>
+
+              </div>
+
+              <div class="generators__slide">
+
+                <div class="generators__description">
+
+                  <div class="generators__description-wrap">
+
+                    <div class="generators__model">
+                      <span class="generators__model-series">TK-</span>1000hnd
+                    </div>
+      
+                    <p class="generators__type">
+                      Газопоршневая  когенерационная установка
+                    </p>
+
+                  </div>
+
+                  <ul class="generators__arrows-mobile list">
+    
+                    <li class="generators__arrows-item arrow-wrap">
+                      <button class="generators__arrow arrow arrow--dark arrow--disabled" disabled>
+                        <svg class="generators__arrow-icon arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.75 1L1.75 8L7.75 15" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Предыдущий генератор
+                      </button>
+                    </li>
+    
+                    <li class="generators__arrows-item arrow-wrap">
+                      <button class="generators__arrow arrow arrow--dark">
+                        <svg class="generators__arrow-icon arrow-icon arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.25 15L7.25 8L1.25 1" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Следующий генератор
+                      </button>
+                    </li>
+    
+                  </ul>
+
+                  <div class="generators__graphics-mobile">
+
+                    <div class="generators__images">
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-165k.png" alt="Дизельный генератор TK-165K">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap ">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-250vm.png" alt="Дизельный генератор TK-250VM">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-500vm.png" alt="Дизельный генератор TK-500VM">
+                        </picture>
+                      </div>
+        
+                      <div class="generators__image-wrap generators__image-wrap--active">
+                        <picture>
+                          <img class="generators__image" src="/images/img-generator-tk-1000hnd.png" alt="Дизельный генератор TK-1000HND">
+                        </picture>
+                      </div>
+        
+                    </div>
+        
+                  </div>
+
+                  <div class="generators__info-wrap">
+
+                    <ul class="generators__dots-mobile list">
+
+                      <li>
+                        <button class="generators__dot dot dot--active" disabled>
+                          Генератор tk-165k
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-250vm
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-500vm
+                        </button>
+                      </li>
+        
+                      <li>
+                        <button class="generators__dot dot dot--grey">
+                          Генератор tk-1000hnd
+                        </button>
+                      </li>
+        
+                    </ul>
+  
+                    <div class="generators__range-wrap">
+      
+                      <span class="generators__range">
+                        250 - 1000 квт
+                      </span>
+      
+                      <span class="generators__range-description">
+                        Диапазон рабочей электрической мощности
+                      </span>
+      
+                    </div>
+
+                  </div>
+
+                </div> 
+                
+                <div class="generators__power">
+
+                  <div class="generators__power-title">
+
+                    <svg width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.3305 0L0 24.5053H14.3116L2.74105 48L31.4779 15.8021H16.6989L26.3874 0H11.3305Z" fill="#A1C437"/>
+                    </svg>
+
+                    <span>
+                      Мощность
+                    </span>
+
+                  </div>
+    
+                  <ul class="generators__indicators list">
+    
+                    <li class="generators__indicator">
+    
+                      Электрическая
+    
+                      <span class="generators__value">
+                        1000
+                        <span class="generators__measure">
+                          квт
+                        </span>
+                      </span>
+    
+                    </li>
+    
+                    <li class="generators__indicator">
+    
+                      Тепловая
+    
+                      <span class="generators__value">
+                        1100
+                        <span class="generators__measure">
+                          квт
+                        </span>
+                      </span>
+    
+                    </li>
+    
+                  </ul>
+    
+                  <ul class="generators__buttons-mobile list">
+    
+                    <li>
+                      <button class="generators__button button button--dark">
+                        Оставить заявку
+                      </button>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="generators__button button button--dark-stroked" download>
+                        Скачать каталог
+                      </a>
+                    </li>
+    
+                  </ul>
 
                 </div>
 
               </div>
 
             </div>
+
+            <ul class="generators__arrows list">
+    
+              <li class="generators__arrows-item arrow-wrap">
+                <button class="generators__arrow arrow arrow--dark arrow--disabled" disabled>
+                  <svg class="generators__arrow-icon arrow-icon" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.75 1L1.75 8L7.75 15" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  Предыдущий генератор
+                </button>
+              </li>
+
+              <li class="generators__arrows-item arrow-wrap">
+                <button class="generators__arrow arrow arrow--dark">
+                  <svg class="generators__arrow-icon arrow-icon arrow-icon--right" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.25 15L7.25 8L1.25 1" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  Следующий генератор
+                </button>
+              </li>
+
+            </ul>
+            
+            <ul class="generators__dots list">
+
+              <li>
+                <button class="generators__dot dot dot--active" disabled>
+                  Генератор tk-165k
+                </button>
+              </li>
+
+              <li>
+                <button class="generators__dot dot dot--grey">
+                  Генератор tk-250vm
+                </button>
+              </li>
+
+              <li>
+                <button class="generators__dot dot dot--grey">
+                  Генератор tk-500vm
+                </button>
+              </li>
+
+              <li>
+                <button class="generators__dot dot dot--grey">
+                  Генератор tk-1000hnd
+                </button>
+              </li>
+
+            </ul>
+
+            <ul class="generators__buttons list">
+    
+              <li>
+                <button class="generators__button button button--dark">
+                  Оставить заявку
+                </button>
+              </li>
+
+              <li>
+                <a href="#" class="generators__button button button--dark-stroked" download>
+                  Скачать каталог
+                </a>
+              </li>
+
+            </ul>
+
+            <div class="generators__graphics">
+
+              <div class="generators__images">
+  
+                <div class="generators__image-wrap generators__image-wrap--active">
+                  <picture>
+                    <img class="generators__image" src="/images/img-generator-tk-165k.png" alt="Дизельный генератор TK-165K">
+                  </picture>
+                </div>
+  
+                <div class="generators__image-wrap">
+                  <picture>
+                    <img class="generators__image" src="/images/img-generator-tk-250vm.png" alt="Дизельный генератор TK-250VM">
+                  </picture>
+                </div>
+  
+                <div class="generators__image-wrap">
+                  <picture>
+                    <img class="generators__image" src="/images/img-generator-tk-500vm.png" alt="Дизельный генератор TK-500VM">
+                  </picture>
+                </div>
+  
+                <div class="generators__image-wrap">
+                  <picture>
+                    <img class="generators__image" src="/images/img-generator-tk-1000hnd.png" alt="Дизельный генератор TK-1000HND">
+                  </picture>
+                </div>
+  
+              </div>
+  
+            </div>
+
+            <span class="generators__bg-model">
+              165k
+            </span>
 
           </div>
 
@@ -1784,7 +2425,7 @@
 
         <section id="section_8" class="partners">
 
-          <div class="partners__main">
+          <div class="partners__main container-inner">
 
             <div class="partners__title-wrap title-wrap">
 
@@ -1844,89 +2485,119 @@
               
               <div class="partners__item-wrap">
                 
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
   
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
 
               </div>
 
               <div class="partners__item-wrap">
                 
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
   
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
 
               </div>
 
               <div class="partners__item-wrap">
                 
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
   
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
 
               </div>
 
               <div class="partners__item-wrap">
                 
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
   
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
 
               </div>
 
               <div class="partners__item-wrap">
                 
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
   
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
 
               </div>
 
               <div class="partners__item-wrap">
                 
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
   
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
 
               </div>
 
               <div class="partners__item-wrap">
                 
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
   
-                <picture class="partners__item">
-                  <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
-                </picture>
+                <div class="partners__item">
+                  <picture class="partners__graphics">
+                    <img class="partners__logo" src="/images/img-logo-liebherr.svg" alt="Компания Liebherr - официальный партнёр компании Tehkreit">
+                  </picture>
+                </div>
 
               </div>
 
             </div>
+
+            <div class="partners__progess-bar progress-bar"></div>
 
           </div>
 
@@ -1955,7 +2626,7 @@
               </li>
 
               <li class="about__condition">
-                вдля надёжного обеспечения энергией объектов с повышенными требованиями к качеству электроснабжения;
+                для надёжного обеспечения энергией объектов с повышенными требованиями к качеству электроснабжения;
               </li>
 
               <li class="about__condition">
@@ -2009,7 +2680,11 @@
             </ol>
 
             <p class="about__paragraph paragraph">
-              Заказывая газопоршневые станции в компании «Техкрейт», вы получаете надёжное и эффективное автономное оборудование, функционирующее в любых условиях окружающей среды. Использование в качестве топлива природный и попутный газ делает наши генераторные когенерационные установки экологически безопасными и экономически выгодными в сравнении с централизованным электроснабжением или резервными источниками электроэнергии, работающими на дизельном топливе.
+              Заказывая газопоршневые станции в компании «Техкрейт», вы получаете надёжное и эффективное автономное оборудование, функционирующее в любых условиях окружающей среды.
+            </p>
+
+            <p class="about__paragraph paragraph">
+              Использование в качестве топлива природный и попутный газ делает наши генераторные когенерационные установки экологически безопасными и экономически выгодными в сравнении с централизованным электроснабжением или резервными источниками электроэнергии, работающими на дизельном топливе.
             </p>
 
           </div>
@@ -3054,7 +3729,7 @@
 
       </section>
 
-      <button class="button button-up">
+      <button class="button button-up button-up--visible">
         <svg class="button-up__icon" width="16" height="41" viewBox="0 0 16 41" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.98274 0.292893C8.59222 -0.0976317 7.95905 -0.0976317 7.56853 0.292893L1.20457 6.65685C0.814041 7.04738 0.814041 7.68054 1.20457 8.07107C1.59509 8.46159 2.22825 8.46159 2.61878 8.07107L8.27563 2.41421L13.9325 8.07107C14.323 8.46159 14.9562 8.46159 15.3467 8.07107C15.7372 7.68054 15.7372 7.04738 15.3467 6.65685L8.98274 0.292893ZM9.27563 41L9.27563 0.999999L7.27563 0.999999L7.27563 41L9.27563 41Z" />
         </svg>

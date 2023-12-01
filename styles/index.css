@@ -1347,8 +1347,22 @@ img {
     left: 0;
 }
 
+.projects__slider {
+    position: relative;
+    width: 66.66%;
+}
+
 .projects__slides {
     position: relative;
+    
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow-x: scroll;
+}
+
+.projects__slide {
+    flex: 1 0 100%;
 }
 
 .projects__slide picture {
@@ -3278,7 +3292,7 @@ img {
     }
 
     .generators__graphics {
-        top: 0;
+        top: 2.5rem;
     }
 
     .generators__images {
@@ -3360,6 +3374,10 @@ img {
     .projects__wrap {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .projects__works {
+        font-size: 1.75rem;
     }
 
     /* Stats */
@@ -3604,6 +3622,47 @@ img {
         padding-left: 0;
         padding-right: 0;
     }
+    
+    .projects__projects {
+        flex-direction: column-reverse;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 1.25rem;
+    }
+
+    .projects__slider {
+        width: calc(640px - 2.5rem);
+    }
+
+    .projects__project {
+        width: auto;
+    }
+
+    .projects__slides {
+        height: 22rem;
+
+        overflow-y: hidden;
+    }
+
+    .projects__description {
+        padding-bottom: 5rem;
+    }
+
+    .projects__description-project {
+        gap: 1.25rem;
+    }
+
+    .projects__dots {
+        left: 1.25rem;
+        bottom: 1.25rem;
+
+        gap: 1rem;
+    }
+
+    .projects__dot {
+        width: 1rem;
+        height: 1rem;
+    }
 
     /* Customers */
 
@@ -3675,7 +3734,7 @@ img {
     }
 
     .generators__image-wrap picture {
-        justify-content: center;
+        justify-content: centera;
     }
 
     .generators__graphics {
@@ -3980,6 +4039,10 @@ img {
         padding-right: 0;
     }
 
+    .projects__slider {
+        width: auto;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -4035,6 +4098,12 @@ img {
 
     .services__button {
         min-height: auto;
+    }
+
+    /* Projects */
+
+    .projects__slides {
+        height: auto;
     }
 
     /* Generators */

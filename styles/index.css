@@ -1363,10 +1363,19 @@ img {
 
 .projects__slide {
     flex: 1 0 100%;
+    overflow: hidden;
 }
 
 .projects__slide picture {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.projects__slide picture img {
+    max-width: none;
+    max-height: 100%;
 }
 
 .projects__dots {
@@ -2589,6 +2598,8 @@ img {
     stroke: inherit;
 }
 
+/* Calculation */
+
 .calculation {
     position: static;
     top: 0;
@@ -2671,7 +2682,13 @@ img {
     flex: 1 0 100%;
 }
 
-/* service */
+.calculation__close {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+}
+
+/* Service */
 
 .service {
     position: fixed;
@@ -3281,6 +3298,12 @@ img {
         font-size: 1.5rem;
     }
 
+    /* Projects */
+
+    .projects__description-project {
+        gap: 1.5rem;
+    }
+
     /* Generators */
     
     .generators__description {
@@ -3305,6 +3328,19 @@ img {
 
     .generators__indicator {
         font-size: 1.5rem;
+    }
+
+    /* Calculation */
+
+    .calculation {
+        display: flex;
+    }
+
+    .calculation__main {
+        position: relative;
+        
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 
 }
@@ -3631,7 +3667,7 @@ img {
     }
 
     .projects__slider {
-        width: calc(640px - 2.5rem);
+        width: auto;
     }
 
     .projects__project {
@@ -3639,8 +3675,6 @@ img {
     }
 
     .projects__slides {
-        height: 22rem;
-
         overflow-y: hidden;
     }
 
@@ -3757,7 +3791,6 @@ img {
         margin-bottom: 1.25rem;
     }
 
-    
     .generators__power-title svg {
         height: 1.5rem;
     }
@@ -3775,7 +3808,9 @@ img {
 
     .generators__indicator {
         display: flex;
-        gap: 0.625rem;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1.5rem;
         font-size: 1.25rem;
         margin-bottom: 0.625rem;
     }
@@ -3920,6 +3955,21 @@ img {
 }
 
 @media (max-width: 720px) {
+
+    /* Generators */
+
+    .generators__range {
+        font-size: 1.5rem;
+    }
+
+    .generators__power-title {
+        gap: .5rem;
+    }
+
+    .generators__indicator {
+        flex-direction: column;
+        gap: 0.625rem;
+    }
 
     /* Stats */
 

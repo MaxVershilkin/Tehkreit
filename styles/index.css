@@ -2630,7 +2630,7 @@ img {
     top: 0;
     z-index: 999;
 
-    display: flex;
+    display: none;
 
     overflow-y: scroll;
     background-color: var(--color-optional-3);
@@ -2740,6 +2740,8 @@ img {
     height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+
+    overflow-y: scroll;
 }
 
 .service--active {
@@ -2748,7 +2750,6 @@ img {
 
 .service--active .service__content {
     opacity: 1;
-    transform: translateY(0);
 }
 
 .service__content {
@@ -2758,11 +2759,13 @@ img {
     flex-direction: column;
     gap: 2.5rem 0;
     width: 1280px;
+    box-sizing: border-box;
 
     opacity: 0;
     padding: 3.75rem 2.5rem 2.5rem;
     background-color: var(--color-light);
     box-shadow: 0 0 1rem var(--color-primary-trns-025);
+    overflow-y: scroll;
 
     transition: opacity .4s ease-out,
                 transform .4s ease-out;
@@ -2895,6 +2898,7 @@ img {
 
 .service__button {
     align-self: flex-start;
+    margin-top: auto;
     z-index: 2;
 }
 
@@ -3353,6 +3357,13 @@ img {
         min-height: 480px;
     }
 
+    /* Service */
+
+    .service__content {
+        width: auto;
+        margin: 2.5rem;
+    }
+
 }
 
 @media (max-width: 1270px) {
@@ -3759,6 +3770,13 @@ img {
         padding: 1.25rem 1.25rem 2.5rem 1.25rem;
     }
 
+    /* Service */
+
+    .service__content {
+        width: auto;
+        height: 100%;
+    }
+
     /* Projects */
 
     .projects__wrap {
@@ -3803,6 +3821,12 @@ img {
     .projects__dot {
         width: 1rem;
         height: 1rem;
+    }
+
+    /* Services */
+
+    .services {
+        position: static;
     }
 
     /* Customers */
@@ -4120,6 +4144,7 @@ img {
 
     .service__content {
         padding: 5rem 1.25rem 1.25rem 1.25rem;
+        margin: 0;
     }
 
     .service__num {
@@ -4327,6 +4352,31 @@ img {
 
     .projects__slider {
         width: auto;
+    }
+
+    /* Service */
+
+    .service__content {
+        padding-top: 3.75rem;
+    }
+
+    .service__description {
+        font-size: 1.25rem;
+    }
+
+    .service__subtitle {
+        font-size: 1rem;
+    }
+
+    .service__info-item {
+        align-items: flex-start;
+
+        line-height: 140%;
+    }
+
+    .service__num {
+        font-size: 4rem;
+        line-height: 120%;
     }
 
 }

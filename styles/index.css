@@ -774,7 +774,6 @@ img {
     content: 'Ошибка ввода данных';
     
     display: none;
-    margin-top: 0.75rem;
 
     color: var(--color-error);
     
@@ -2671,7 +2670,7 @@ img {
     flex-direction: column;
     flex: 1 0 auto;
     gap: 1.25rem;
-    /* width: calc(50% - 2.5rem); */
+    width: calc(50% - 2.5rem);
     box-sizing: border-box;
 }
 
@@ -3549,6 +3548,12 @@ img {
     
     .stats__grid-line-ver {
         width: 1px;
+    }
+
+    /* Calculation */
+
+    .calculation__input-wrap {
+        width: 100%;
     }
 
 }

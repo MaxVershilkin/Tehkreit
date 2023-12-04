@@ -1010,9 +1010,9 @@ img {
     flex-wrap: nowrap;
     align-items: stretch;
 
-    /* min-height: 690px; */
+    max-height: 690px;
 
-    overflow: auto;
+    overflow: auto hidden;
 }
 
 .homepage__slide {
@@ -1020,16 +1020,24 @@ img {
     flex: 1 0 auto;
     height: 100%;
     width: 100%;
+    overflow-y: clip;
 }
 
 .homepage__slide--active {
     display: flex;
-    width: 100%;
-    height: 100%;
 }
 
 .homepage__slide picture {
     display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.homepage__slide picture img {
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .homepage__progress {
